@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.custom_drop {
+  position: relative;
+}
+
+.custom_drop .custom_drop_trigget {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom_drop .custom_drop_trigget svg {
+  width: 24px;
+}
+
+.custom_drop .custom_drop_content {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #d1e7dd;
+  left: 0;
+  top: 120%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.custom_drop .custom_drop_content li {
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.custom_drop .custom_drop_content li:hover {
+  background: #fff;
+}
+
+.btn_inc,
+.btn_dec {
+  display: flex;
+  border: none;
+  background: transparent;
+}
+
+.btn_inc svg,
+.btn_dec svg {
+  width: 24px;
+  height: 24px;
+}
+
+.btn_inc {
+  color: #4fac5c;
+}
+
+.btn_dec {
+  color: #af2419;
+}
